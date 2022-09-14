@@ -24,7 +24,7 @@ void factorial() {
 	sum = 1;
 	while (A < 0) {
 
-		cout << "Nice try, please enter a Positive number...: ";
+		cout << "Nice try, please enter a POSITIVE number...: ";
 		cin >> A;
 		
 	};
@@ -38,11 +38,59 @@ void factorial() {
 }
 void arithmetic() {
 	// I recommend writing your arithmetic series code here
+ int diff;
+ int start;
+ int num;
+ int count = 0;
+ int total = 0;
+ cout << "Enter a number to start at: ";
+ cin >> start; 
+ cout << "Enter a number to add each time : ";
+ cin >> diff;
+ cout << "Enter the number of elements in the series: ";
+ cin >> num;
+ 
+ while (count < num) {
+    cout << start;
+    total = total + start; 
+    start = start + diff;
+    count = count + 1;
+        if (count < num ) {
+            cout << " + ";
+        }
+        else {
+            cout << " = " << total << endl;
+        }
 
-	
+}
 }
 void geometric() {
 	// I recommend writing your geometric series code here
+	int diff;
+ int start;
+ int num;
+ int count = 0;
+ int total = 0;
+ cout << "Enter a number to start at: ";
+ cin >> start; 
+ cout << "Enter a number to add each time : ";
+ cin >> diff;
+ cout << "Enter the number of elements in the series: ";
+ cin >> num;
+ 
+ while (count < num) {
+    cout << start;
+    total = total + start; 
+    start = start * diff;
+    count = count + 1;
+        if (count < num ) {
+            cout << " + ";
+        }
+        else {
+            cout << " = " << total << endl;
+        }
+
+}
 }
 int main() {
 	int choice;
